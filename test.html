@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>测试base.js</title>
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+    <script src="base.js"></script>
+    <script>
+        window.onload = function() {
+            //console.log($().getId('app').elements.length); 1
+            //console.log($().getClass('text').elements.length) 3
+            //console.log($().getTagName('p').elements.length) 3
+            //console.log($().getTagName('p').css('color')); rgb(255, 0, 0)
+            $().getId('app').addClass('box').addClass('box2');
+            $().getId('app').removeClass('box');
+            console.log($().getId('one').html()); //hello world
+            $().getId('one').html('你好');
+        }
+    </script>
+</head>
+
+<body>
+    <div id="app">
+        <p class="text">111111</p>
+        <p class="text">222222</p>
+        <p class="text">333333</p>
+    </div>
+    <div id="one">hello world</div>
+</body>
+
+</html>
