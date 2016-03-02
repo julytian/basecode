@@ -1,11 +1,14 @@
 //前台调用
-var $ = function() {
-    return new Base();
+var $ = function(_this) {
+    return new Base(_this);
 };
 
 //基础库
-function Base() {
+function Base(_this) {
     this.elements = [];
+    if(_this != undefined){
+    	this.elements[0] = _this;
+    }
 }
 
 //获取ID
