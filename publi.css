@@ -1,0 +1,13 @@
+/* public */
+.clear { zoom:1; }
+.clear:after { content:''; display:block; clear:both; }
+.fl { float:left; }
+.fr { float:right; }
+.gradient {
+	background:-moz-linear-gradient(top, #FFFFFF, #f8f8f8);
+	background:-webkit-linear-gradient(top, #FFFFFF, #f8f8f8);
+	background:-ms-linear-gradient(top, #FFFFFF, #f8f8f8);
+	background:linear-gradient(top, #FFFFFF, #f8f8f8);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#FFFFFF, endColorstr=#f8f8f8)";
+	+background:#f9f9f9;
+}
