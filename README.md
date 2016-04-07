@@ -1,2 +1,2 @@
-# basejs
-封装自己的js函数库
+# basecode
+封装库，收集代码
