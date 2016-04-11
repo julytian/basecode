@@ -29,3 +29,9 @@
 .form-control::-webkit-input-placeholder {
   color: #999;
 }
+
+/***移动端平滑滚动***/
+body{
+	  -webkit-overflow-scrolling: touch;
+}
+}
